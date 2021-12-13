@@ -1,0 +1,30 @@
+
+<html>
+<head>
+    <title>AzE's Click Counter</title>
+	 <link rel="stylesheet" href="style.css">
+	 <link rel="icon" href="https://i.ibb.co/q5NxbZg/226106-roll-256x256.png">
+</head>
+
+<body>
+  <div style="background-image: url('');">
+    <h1>Click Until You Get 30 Clicks For A Suprise!</h1>
+    <script type="text/javascript">
+
+    var clicks = 0;
+    function hello() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+		   if(clicks >= 30) {
+	   window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+	  }
+    };
+	 
+	 if(clicks == 30) {
+	 window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+	 };
+    </script>
+    <button background-color="black"type="button" onclick="hello()"><h1>Click Here!</h1></button>
+    <p><h1>Clicks: <a id="clicks">0</a></h1></p>
+
+</body></html>
